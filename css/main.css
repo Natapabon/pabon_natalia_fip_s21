@@ -22,15 +22,25 @@ main > div {
   display: inline-block;
   padding: 4px 12px;
   border-radius: 0.5em;
-  background-color: blue;
-  color: white;
+  background-color: white;
+  color: blue;
 }
+.box:nth-of-type(1) { background-color: pink; }
+.box:nth-of-type(2) { background-color: red; }
 
 .box:nth-of-type(3) { display: none; }
 .box:nth-of-type(4) { display: none; }
 
 @media screen and (min-width: 641px) {
   main { flex-direction: row; }
-  .box:nth-of-type(3) { display: inline; }
-  .box:nth-of-type(4) { display: inline; }
+
+  .box:nth-of-type(1) { background-color: blue; }
+  .box:nth-of-type(2) { background-color: purple; }
+
+  .box:nth-of-type(3) { display: inline; background-color: grey; }
+  .box:nth-of-type(4) { display: inline; background-color: brown; }
+}
+
+@media screen and (min-width: 1140px) {
+  main { width: 1140px; margin: auto;}
 }
