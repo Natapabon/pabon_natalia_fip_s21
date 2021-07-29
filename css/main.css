@@ -51,11 +51,13 @@ main { width: 100%; background-color: #EAFBFF;}
 }
 
 #logoCon {
-  height: 20px;
+  height: 10px;
   display: flex;
   align-items: center;
-  margin-right: 20px;
+  margin: 15px;
 }
+
+#logoCon:hover { transform: scale(1.08); }
 
 /* navigation burger*/
 
@@ -70,7 +72,7 @@ main { width: 100%; background-color: #EAFBFF;}
 
 #burgerCon {
 	display: none; /*hide intitially*/
-  margin-top: 10px; /*bump menu below 3 lines*/
+  margin-top: 15px; /*bump menu below 3 lines*/
   background-color: #312783;
 }
 
@@ -92,6 +94,7 @@ main { width: 100%; background-color: #EAFBFF;}
 
 #mainNav li a {
   font-weight: 900;
+
 	background-color: #2472B8;
 	display: block;
 	color: #fff;
@@ -183,36 +186,46 @@ main { width: 100%; background-color: #EAFBFF;}
 /* ----------- Body starts --------   */
 
 .homeBodyCon {
-	width: 450px;
+	width: 350px;
   height: 250px;
 	color: #fff;
-	margin: 0 auto;
+	margin: 20px auto;
 	display: block;
 	text-align: center;
 	padding: 20px 0 20px 0;
 	border-radius: 10px;
-	margin-top: 20px;
 	font-size: 15px;
+
+  justify-content: flex-end;
+
 }
 
-.homeBodyCon:hover {
-  transform: scale(1.05);
-}
+.homeBodyCon:hover {transform: scale(1.05);}
+
+.homeBodyCon a {text-decoration: none; color: white;}
 
 .textBoxCon {
   background-color: black;
   opacity: 70%;
-  margin-top: 30%;
+  margin-top: 40%;
   padding: 10px 0 10px 0;
 	border-radius: 0px 0px 10px 10px;
 }
 
+.textBoxCon h2 { font-weight: 900; }
+
 .historyHome {
-  background: url(../images/promos/home_body_history.jpg) center no-repeat;
+  background-image: url(../images/lo-res_MOBILE/context/Mobile_home_history_btn.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+  background-size: cover;
 }
 
 .beerHome {
-  background: url(../images/promos/home_body_beers.jpg) center no-repeat;
+  background-image: url(../images/lo-res_MOBILE/products/Mobile_home_beer_btn.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+  background-size: cover;
 }
 
 /* ----------- Footer starts --------   */
@@ -353,6 +366,8 @@ main { width: 100%; background-color: #EAFBFF;}
   .bodyCon { flex-direction: row; }
 
 }
+
+/* ----------- home bodyContainer starts --------   */
 
 /* ----------- footer starts --------   */
 
