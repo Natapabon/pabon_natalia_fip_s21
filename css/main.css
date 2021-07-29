@@ -1,46 +1,367 @@
-/* quick global reset */
-* { border: none; margin: 0; padding: 0; box-sizing: border-box; }
+
 .hidden { display: none;}
 
-html, body { height: 100vh; }
-/* vh means ViewportHeight - a dynamic measurement that refers to the visible area (viewport) of a browser window */
+body {
+  background-color: #fff;
+  font-size: 100%;
+  font-family: "ROBOTO", Arial, Helvetica, sans-serif;
+}
 
-body { font-family: arial, helvetica, sans-serif; font-size: 16px; }
+h2 {padding: 0.5em; font-size: 2em; margin-top: 1em;}
 
-main {
+main { width: 100%; background-color: #EAFBFF;}
+
+.mainHeader {
+  background-color: #312783;
+  color: white;
+  padding: 1em;
+  height: 80px;
+}
+
+.sector {
+  padding: 10px 12px;
+  color: white;
+  background-color: #333;
+  border-radius: 8px;
+}
+
+.bannerCon {
+  color: white;
+  padding: 2em;
+}
+
+.bodyCon {
+  color: white;
+  padding: 2em;
   display: flex;
   flex-direction: column;
-  min-height: 100%;
 }
 
-main > div {
-  flex: 1;
-  border: thin solid black;
-  padding: 1em; }
-
-.box > span {
-  display: inline-block;
-  padding: 4px 12px;
-  border-radius: 0.5em;
-  background-color: white;
-  color: blue;
-}
-.box:nth-of-type(1) { background-color: pink; }
-.box:nth-of-type(2) { background-color: red; }
-
-.box:nth-of-type(3) { display: none; }
-.box:nth-of-type(4) { display: none; }
-
-@media screen and (min-width: 641px) {
-  main { flex-direction: row; }
-
-  .box:nth-of-type(1) { background-color: blue; }
-  .box:nth-of-type(2) { background-color: purple; }
-
-  .box:nth-of-type(3) { display: inline; background-color: grey; }
-  .box:nth-of-type(4) { display: inline; background-color: brown; }
+.footerCon {
+  display: flex;
+  flex-direction: column;
 }
 
-@media screen and (min-width: 1140px) {
-  main { width: 1140px; margin: auto;}
+/* ----------- Header starts --------   */
+
+#navContainer {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+#logoCon {
+  height: 20px;
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+/* navigation burger*/
+
+#mainNav {
+	display: flex;
+	flex-direction: column;
+  width: 100%;
+	margin-bottom: 20px;
+}
+
+#mainNav button { margin-left: auto; }
+
+#burgerCon {
+	display: none; /*hide intitially*/
+  margin-top: 10px; /*bump menu below 3 lines*/
+  background-color: #312783;
+}
+
+ #burgerCon.slideToggle { display: block; }
+
+ #mainNav button {
+  background: url(../images/icons/burger.svg) center no-repeat;
+  border: 1px;
+  width: 30px;
+  height: 30px;
+  transition: all 400ms ease;
+}
+
+ .expanded {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+#mainNav li a {
+  font-weight: 900;
+	background-color: #2472B8;
+	display: block;
+	color: #fff;
+	padding: 20px 0 20px 0;
+	text-align: center;
+
+  text-decoration: none;
+}
+
+#mainNav li { border-bottom: 1px solid #fff; }
+
+#mainNav li:first-child { border-top: 1px solid #fff; }
+
+#mainNav li:last-child { margin-bottom: 10px; }
+
+#mainNav li a:hover { background-color: #fff; color: #2472B8;}
+
+
+.logInButton {
+  text-decoration: none;
+
+	background-color: #fff;
+	width: 170px;
+	color: #E10B14;
+	margin: 0 auto;
+	display: block;
+	text-align: center;
+	padding: 20px 5px 20px 5px;
+	border-radius: 5px;
+	margin-top: 10px;
+  margin-bottom: 10px;
+	font-size: 15px;
+	transition: all .5s ease;
+}
+
+.logInButton:hover { color: #fff; background-color: #E10B14; }
+
+
+
+/* HOME */  /* ----------- Main Banner starts --------   */
+
+#imageBanner {
+  padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	height: 464px;
+	background-image: url(../images/lo-res_MOBILE/promo/Mobile_beer_promo1.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+  background-size: cover;
+}
+
+#imageBanner h2 {
+	font-size: 30px;
+	font-weight: bold;
+	color: #312783;
+	text-align: center;
+	margin-top: 75%;
+}
+
+#imageBanner p {
+	font-size: 15px;
+	color: #312783;
+	line-height: 20px;
+  text-align: center;
+	margin-bottom: 10px;
+}
+
+
+#seeMore {
+	display: block;
+	width: 140px;
+  background-color: #E10B14;
+	color: #fff;
+  border-radius: 5px;
+	padding: 15px 0;
+	text-align: center;
+	text-decoration: none;
+	font-size: 15px;
+	margin: 0 auto;
+}
+
+#seeMore:hover {
+	background-color: #fff;
+  color: #E10B14;
+}
+
+
+/* ----------- Body starts --------   */
+
+.homeBodyCon {
+	width: 450px;
+  height: 250px;
+	color: #fff;
+	margin: 0 auto;
+	display: block;
+	text-align: center;
+	padding: 20px 0 20px 0;
+	border-radius: 10px;
+	margin-top: 20px;
+	font-size: 15px;
+}
+
+.homeBodyCon:hover {
+  transform: scale(1.05);
+}
+
+.textBoxCon {
+  background-color: black;
+  opacity: 70%;
+  margin-top: 30%;
+  padding: 10px 0 10px 0;
+	border-radius: 0px 0px 10px 10px;
+}
+
+.historyHome {
+  background: url(../images/promos/home_body_history.jpg) center no-repeat;
+}
+
+.beerHome {
+  background: url(../images/promos/home_body_beers.jpg) center no-repeat;
+}
+
+/* ----------- Footer starts --------   */
+
+.footerBox {
+  background-color:#312783;
+  color: white;
+  margin-top: 5px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+#navBoxfooter{
+  display: flex;
+  flex-direction: row;
+}
+
+#navBoxfooter li a {
+	display: block;
+  width: 80px;
+	color: #fff;
+	padding: 10px 0 10px 0;
+	text-align: center;
+  font-weight: bold;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+#navBoxfooter li {
+  border-left: 1px solid #fff;
+  border-bottom: none;
+  display: inline;
+  margin-left: 20px;
+}
+
+#navBoxfooter li:first-child { border-left: 0px; }
+
+#navBoxfooter li:last-child { margin-right:10px; }
+
+#navBoxfooter li a:hover {
+  color: #2472B8;
+  border-bottom: 3px solid #2472B8;
+  padding-bottom: 5px;
+  background-color: transparent;
+}
+
+#copyRight {
+  width: 70%;
+  font-size: 10px;
+}
+
+#footerSubNav svg {
+  width: 30px;
+}
+
+#footerSubNav svg:hover {
+  transform: scale(1.08);
+}
+
+
+/* ----------- screens diplay - Responsive --------   */
+
+@media screen and (min-width: 620px) {
+  main { width: 100%; margin: auto;}
+
+
+/* --- menu starts for screen 620px ---   */
+
+  #button { display: none; }
+
+  #burgerCon {
+    /*display: block;*/
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+  }
+
+  #mainNav {
+    text-align: right;
+    text-transform: uppercase;
+    margin-left: auto;
+  }
+
+  #burgerMenu { text-align: right; }
+
+  #mainNav li {
+    border-bottom: none;
+    display: inline;
+    margin-left: 20px;
+  }
+
+  #mainNav li a {
+    background-color: #2472B8;
+    display: inline;
+    padding: 5px 0 5px 0;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  #mainNav li a:hover {
+    background-color: #fff;
+    color: #2472B8;
+    padding-bottom: 5px;
+  }
+
+  #mainNav li:first-child  { border-top: none; }
+
+  #mainNav li:last-child { margin-bottom: 0; }
+
+  /*descendent selector, don't want to affect order buttons below*/
+  #burgerCon .logInButton  {
+    margin: auto;
+    padding: 15px 5px 15px 5px;
+  }
+
+/* ----------- Body starts --------   */
+
+  #imageBanner {
+    width: auto;
+    background-image: url(../images/hi-res_WEB/promo/Web_beer_promo1.jpg);
+    background-size: cover;
+  }
+
+  #imageBanner h2 {
+    text-align: left;
+    margin-top: auto;
+    margin-left: 2em;
+    font-size: 60px;
+  }
+
+  #imageBanner p {
+    text-align: left;
+    margin-left: 2em;
+    font-size: 30px;
+  }
+
+  .bodyCon { flex-direction: row; }
+
+}
+
+/* ----------- footer starts --------   */
+
+.footerCon {
+  flex-direction: column;
+}
+
+
+
+@media screen and (min-width: 1200px) {
+  main {width: 1200px; margin: auto; }
 }
