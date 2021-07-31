@@ -138,7 +138,61 @@ main { width: 100%; background-color: #EAFBFF;}
 
 .logInButton:hover { color: #fff; background-color: #E10B14; }
 
+/* ----------- Footer starts --------   */
 
+.footerBox {
+  background-color:#312783;
+  color: white;
+  margin-top: 5px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+#footerNavCon nav { width: auto; margin: auto; }
+
+#footerNavCon nav ul { overflow: hidden; list-style: none;}
+
+#footerNavCon nav ul li { float: left;}
+
+#footerNavCon nav ul li a{
+  display: block;
+
+  width: 120px;
+  color: #fff;
+  text-align: center;
+	padding: 10px;
+  font-weight: bold;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+#footerNavCon nav ul li a:hover {
+  color: #2472B8;
+  border-bottom: 3px solid #2472B8;
+}
+
+#copyRight {
+  width: 70%;
+  font-size: 12px;
+  line-height: 1.2em;
+  margin-right: 15px;
+}
+
+#copyRight p { margin-bottom: 1.5em; }
+
+#footerSubNav {
+  width: 110px;
+}
+
+#footerSubNav svg {
+  width: 35px;
+  margin: 5px;
+}
+
+#footerSubNav svg:hover {
+  transform: scale(1.08);
+}
 
 /* HOME */  /* ----------- Main Banner starts --------   */
 
@@ -261,61 +315,119 @@ main { width: 100%; background-color: #EAFBFF;}
 
  .titleBeer{color: #312783;}
 
-/* ----------- Footer starts --------   */
 
-.footerBox {
-  background-color:#312783;
-  color: white;
-  margin-top: 5px;
-  padding: 20px;
+
+/* our Beer*/  /* ----------- Main Banner starts --------   */
+
+#videoBannerCon {
   display: flex;
-  flex-direction: row;
+  flex-direction: column-reverse;
+  align-items: center;
+
 }
 
-#footerNavCon nav { width: auto; margin: auto; }
+#bannerVideo {width: 100%;}
 
-#footerNavCon nav ul { overflow: hidden; list-style: none;}
-
-#footerNavCon nav ul li { float: left;}
-
-#footerNavCon nav ul li a{
+.musicBtnCon {
   display: block;
-
-  width: 120px;
-  color: #fff;
+  position: absolute;
   text-align: center;
-	padding: 10px;
-  font-weight: bold;
-  font-size: 15px;
-  text-decoration: none;
+  margin: auto;
+  width: 100%;
+
+  animation: videoBtn 4s steps(10) infinite;
 }
 
-#footerNavCon nav ul li a:hover {
-  color: #2472B8;
-  border-bottom: 3px solid #2472B8;
+@keyframes videoBtn {
+  0% { transform: scale(1);}
+  10% { transform: scale(1.1);}
+  20% { transform: scale(0.9);}
+  30% { transform: scale(1.1);}
+  40% { transform: scale(1);}
+  100% { transform: scale(1);}
+
 }
 
-#copyRight {
-  width: 70%;
-  font-size: 12px;
-  line-height: 1.2em;
-  margin-right: 15px;
+.musicBtnCon h2 {
+	font-size: 3em;
+	font-weight: bold;
+	color: #312783;
 }
 
-#copyRight p { margin-bottom: 1.5em; }
 
-#footerSubNav {
-  width: 110px;
+#playAudio{
+	display: block;
+	width: 140px;
+  background-color: #312783;
+	color: #fff;
+  border-radius: 5px;
+	padding: 10px 0;
+
+	text-align: center;
+	text-decoration: none;
+	font-size: 20px;
+  font-weight: 800;
+	margin: auto auto 20px auto;
 }
 
-#footerSubNav svg {
-  width: 35px;
-  margin: 5px;
+#playAudio:hover {
+	background-color: #fff;
+  color: #312783;
 }
 
-#footerSubNav svg:hover {
-  transform: scale(1.08);
+/* ----------- Body starts --------   */
+
+.beerBodyCon {
+	width: 350px;
+  height: 250px;
+	color: #fff;
+	margin: 20px;
+	text-align: center;
+	padding: 20px;
+	border-radius: 10px;
+	font-size: 15px;
+
+  display: flex;
+  box-sizing: content-box;
+  position: relative;
+  justify-content: flex-end;
+
 }
+
+.beerBodyCon:hover {transform: scale(1.05);}
+
+.beerBodyCon a {text-decoration: none; color: white;}
+
+.titleProduct {
+  background-color: transparent;
+  margin-top: 20%;
+  margin-left: 10%;
+  padding: 10px;
+}
+
+.titleProduct h2 { font-weight: 900; }
+
+.prod1Beer {
+  background-image: url(../images/lo-res_MOBILE/products/Mobile_beer_0_Alcohol.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+  background-size: cover;
+}
+
+.prod2Beer {
+  background-image: url(../images/lo-res_MOBILE/products/Mobile_beer_mint.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+  background-size: cover;
+}
+
+.prod3Beer {
+  background-image: url(../images/lo-res_MOBILE/products/Mobile_beer_White.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+  background-size: cover;
+}
+
 
 
 /* ----------- screens diplay - Responsive --------   */
@@ -370,9 +482,37 @@ main { width: 100%; background-color: #EAFBFF;}
     font-size: 14px;
   }
 
+  /* ----------- Our Beer bodyContainer starts --------   */
+
+  .beerBodyCon {
+    width: 250px;
+    height: 350px;
+    padding: 5px;
+
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .titleProduct {
+    margin-top: 20%;
+    margin-left: auto;
+    padding: 10px;
+  }
+
+  .prod1Beer {
+    background-image: url(../images/hi-res_WEB/products/Web_beer_0_Alcohol.jpg);
+  }
+
+  .prod2Beer {
+    background-image: url(../images/hi-res_WEB/products/Web_beer_mint.jpg);
+  }
+
+  .prod3Beer {
+    background-image: url(../images/hi-res_WEB/products/Web_beer_White.jpg);
+  }
+
+
 }
-
-
 
 
 @media screen and (min-width: 1200px) {
