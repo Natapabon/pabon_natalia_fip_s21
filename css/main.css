@@ -17,7 +17,7 @@ main { width: 100%; background-color: #EAFBFF;}
   padding: 1em;
   height: 80px;
 
-  position: sticky;
+  position: sticky; top:auto;
 }
 
 .bannerCon {
@@ -323,7 +323,6 @@ main { width: 100%; background-color: #EAFBFF;}
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
-
 }
 
 #bannerVideo {width: 100%;}
@@ -355,12 +354,13 @@ main { width: 100%; background-color: #EAFBFF;}
 }
 
 
-#playAudio{
+.playAudio{
 	display: block;
 	width: 140px;
   background-color: #312783;
 	color: #fff;
   border-radius: 5px;
+  border-color: transparent;
 	padding: 10px 0;
 
 	text-align: center;
@@ -370,7 +370,7 @@ main { width: 100%; background-color: #EAFBFF;}
 	margin: auto auto 20px auto;
 }
 
-#playAudio:hover {
+.playAudio:hover {
 	background-color: #fff;
   color: #312783;
 }
@@ -428,7 +428,96 @@ main { width: 100%; background-color: #EAFBFF;}
   background-size: cover;
 }
 
+/* HISTORY*/  /* ----------- Main Banner starts --------   */
 
+#historyBanner {
+  padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+
+  background-image: url(../images/hi-res_WEB/context/Web_history_banner.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.textHistoryBlock {
+  display: block;
+  text-align: center;
+  margin: 20em auto auto auto;
+  width: 100%;
+}
+
+.textHistoryBlock h2 {
+	font-size: 3em;
+	font-weight: bold;
+	color: #fff;
+}
+
+#historyTextCon {
+	background-color: #2472B8;
+  padding: 3em;
+}
+
+#historyTextCon > .textHistoryBlock {display: none;}
+.historyText p {
+	font-size: 15px;
+	color: #fff;
+  margin-top: 1em;
+	line-height: 20px;
+	margin-bottom: 1em;
+}
+
+.historyText p span {
+	font-weight: 800;
+  font-size: 16px;
+}
+
+#brewerBanner {
+  height: 250px;
+
+  background-image: url(../images/lo-res_MOBILE/context/Mobile_history_shield.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  align-items:flex-start;
+}
+
+.textBrewerBlock {
+  display: block;
+  width: 70%;
+  margin-left: 40%;
+}
+
+
+.textBrewerBlock h2 {
+  text-align: center;
+  margin: 1em auto;
+  font-size: 3em;
+	font-weight: bold;
+	color: #fff;
+}
+
+#shieldTextCon {
+  padding: 3em;
+}
+
+#shieldTextCon > .historyText p {
+  color: #312783;
+}
+
+#shieldTextCon > .historyText p span {
+  color: #E10B14;
+}
 
 /* ----------- screens diplay - Responsive --------   */
 
@@ -511,6 +600,55 @@ main { width: 100%; background-color: #EAFBFF;}
     background-image: url(../images/hi-res_WEB/products/Web_beer_White.jpg);
   }
 
+  /* ----------- History bodyContainer starts --------   */
+  .historyHead {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  #historyBanner { width: 40%;}
+  #historyTextCon { width: 60%;}
+
+  #historyBanner > .textHistoryBlock {display: none;}
+
+  #historyTextCon > .textHistoryBlock { display: block; margin:1em auto auto auto;}
+
+
+  #brewerBanner {
+
+    background-image: url(../images/hi-res_WEB/context/Web_history_shield.jpg);
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  .textBrewerBlock {
+    margin-left: 70%;
+    width: 65%;
+  }
+
+  .textBrewerBlock h2 {
+    text-align: left;
+    width: 100%;
+    margin: auto;
+  }
+
+  #shieldTextCon {display: none; }
+  #shieldTextConHide {
+    display: inline;
+    margin: auto;
+
+  }
+  #shieldTextConHide > .historyText {
+    margin: 1.3em;
+  }
+
+  #shieldTextConHide > .historyText p {
+    color: #fff;
+  }
+  #shieldTextConHide > .historyText p span {
+    color: #A6E3F0;
+  }
 
 }
 
