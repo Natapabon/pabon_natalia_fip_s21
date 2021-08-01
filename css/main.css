@@ -657,6 +657,54 @@ input, textarea, select {
 
 .logInImg {display: none;}
 
+/* PRODUCT*/  /* ----------- Main Banner starts --------   */
+
+#prodListCon {width: 100%;}
+
+#imgProd {
+  height: 400px;
+  padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+  margin: auto;
+
+  background-image: url(../images/lo-res_MOBILE/products/Mobile_prod_main.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+  background-size: cover;
+}
+
+#prodTitleCon {
+  background-color: #2472B8;
+  padding: 1em 2em 2em 2em;
+}
+
+#prodTitleCon h2 {color: #fff;}
+
+.prodView {
+  margin: 1em auto;
+  display: flex;
+  align-items: flex-start;
+}
+
+.prodImg {
+  height: 120px;
+  margin: 1em;
+  border-radius: 5px;
+}
+
+.prodText {
+  text-align: left;
+  color: #2472B8;
+}
+
+.prodText h2 {
+  color: #2472B8;
+  font-size: 25px;
+  font-weight: 800;}
+
+
+
 /* ----------- screens diplay - Responsive --------   */
 
 @media screen and (min-width: 640px) {
@@ -806,6 +854,23 @@ input, textarea, select {
     width:40%;
 
     background-image: url(../images/hi-res_WEB/context/Web_login.jpg);
+  	background-repeat: no-repeat;
+  	background-position: center;
+    background-size: cover;
+  }
+
+  /* ----------- PRODUCT bodyContainer starts --------   */
+  .productHead {
+    display: flex;
+    flex-direction: row;
+  }
+  #headerProdCon { width:40%;}
+  #imgProd {
+    display:block;
+    width:60%;
+    height: 900px;
+
+    background-image: url(../images/hi-res_WEB/products/Web_prod1_main.jpg);
   	background-repeat: no-repeat;
   	background-position: center;
     background-size: cover;
