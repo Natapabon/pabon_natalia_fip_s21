@@ -7,54 +7,184 @@
 
     <!--this link is the match for the typography in goolgle fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/popup.css" type="text/css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
 
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
-    <title>Grolsch • product</title>
+    <title>Grolsch • Product</title>
 
   </head>
   <body>
     <h1 class="hidden">FIP - Natalia Pabon Final Project</h1>
-    <main class="containerPopUp">
+    <main class="mainContainer">
+      <header class="mainHeader">
+        <h2 class="hidden">Site Header</h2>
 
-        <!-- starts the main banner container-->
-        <section class="popup">
-          <h2 class="hidden">Popup content</h2>
-          <section class="imgPop"></section>
+        <section id="navContainer">
+          <a href="index.html">
+            <div id="logoCon">
+              <img src="images/logo/grolsch_logo_principal.svg" width="200" alt="Grolsch logo">
+            </div>
+          </a>
 
-          <section id="productCon">
-            <div class="textPopBlock">
+          <nav id="mainNav">
+            <h2 class="hidden">Main Navigation</h2>
+             <button id="button"></button>
+                  <div id="burgerCon">
+                    <ul id="burgerMenu">
+                      <li><a href="index.html">HOME</a></li>
+                      <li><a href="ourBeer.html">OUR BEER</a></li>
+                      <li><a href="history.html">OUR HISTORY</a></li>
+                      <li><a href="contact.html">CONTACT US</a></li>
+                    </ul>
+                    <a href="login.html" class="logInButton">Log in</a>
+                  </div>
+          </nav>
+        </section>
+      </header>
+
+      <!-- starts the main banner container-->
+      <section class="bannerCon productHead">
+        <h2 class="hidden">Main Content</h2>
+
+        <div id="imgProd"></div>
+
+        <div id="headerProdCon">
+          <section id="prodTitleCon">
+            <div class="formHeadBlock">
               <h2>Grolsch 0.0% alcohol</h2>
-              <p>Non-burn of alcohol, stay fresh and sober.</p>
+            </div>
+
+            <div class="prodTextBlock">
+              <p>Robust beer, with minty tones and a slight sweetness. The result is a beer that makes it the perfect thirst quencher at every moment of the day.</p>
             </div>
           </section>
 
-          <section id="productList">
-            <div class="prodView">
-              <div class="bottleImg prodImg"></div>
-              <h2>SINGLE BOTTLE</h2>
-              <p>450 mL</p>
-              <p>0.0% alc./vol.</p>
-            </div>
+          <section id="prodListCon">
+            <div class="formHeadBlock">
 
-            <div class="prodView">
-              <div class="canImg prodImg"></div>
-              <h2>6-PACK CAN</h2>
-              <p>6 x 500 mL</p>
-              <p>0.0% alc./vol.</p>
-            </div>
+              <div class="prodView">
+                <img class="prodImg" src="images/lo-res_MOBILE/products/Mobile_prod_bottle.jpg" alt="Bottle">
+                <div class="prodText">
+                  <h2>SINGLE BOTTLE</h2>
+                  <p>450 mL</p>
+                  <p>0.0% alc./vol.</p>
+                </div>
+              </div>
 
-            <div class="prodView">
-              <div class="packImg prodImg"></div>
-              <h2>4 PACK BOTTLE</h2>
-              <p>4 x 450 mL</p>
-              <p>0.0% alc./vol.</p>
-            </div>
+              <div class="prodView">
+                <img class="prodImg" src="images/lo-res_MOBILE/products/Mobile_prod_can.jpg" alt="Can">
+                <div class="prodText">
+                  <h2>6-PACK CAN</h2>
+                  <p>6 x 500 mL</p>
+                  <p>0.0% alc./vol.</p>
+                </div>
+              </div>
 
+              <div class="prodView">
+                <img class="prodImg" src="images/lo-res_MOBILE/products/Mobile_prod_pack.jpg" alt="iPack">
+                <div class="prodText">
+                  <h2>4 PACK BOTTLE</h2>
+                  <p>4 x 450 mL</p>
+                  <p>0.0% alc./vol.</p>
+                </div>
+              </div>
+
+            </div>
+          </section>
+        </div>
+
+    </section>
+
+<!-- FOOTER section------------------>
+      <footer class="footerCon">
+        <section class="footerBox" id="MainNavCon">
+          <section id="shieldfooter">
+            <img src="images/logo/logo_grolsch_shield_red.svg" width="80" alt="Grolsch Shield">
+          </section>
+
+          <section id="footerNavCon">
+            <nav id="navBoxfooter"><!-- the second menu | footer menu-->
+                <h3 class="hidden">footer Main Navigation</h3>
+                <ul>
+                  <li><a href="history.html">OUR HISTORY</a></li>
+                  <li><a href="ourBeer.html">OUR BEER</a></li>
+                  <li><a href="login.html">YOUR ACCOUNT</a></li>
+                  <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+              </nav>
           </section>
         </section>
 
+        <section class="footerBox" id="SubNavCon">
+          <div id="copyRight">
+          <h3 class="hidden">footer Copyright</h3>
+            <p>This page and brand version of Grolsch is made for Fanshawe Collegep`s Final Integrated Project (FIP) in IDP3 program. Summer 2021 - second semester.</p>
+
+            <p>&copy; 2021 GROLSCH. All rights reserved for Natalia Pabon-Viteri.</p>
+          </div>
+
+          <div id="footerSubNav">
+          <h3 class="hidden">footer Sub Navigation</h3>
+
+            <svg id="facebook" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+              <defs>
+                <style>
+                #facebook rect:hover { fill:#E10B14; }
+                #facebook:hover .facebookIcon { fill:white !important; }
+                  .rectangle { fill:white;}
+                </style>
+              </defs>
+
+              <g class="background"><rect class="rectangle" x="0.01" width="40" height="40" rx="5"/></g>
+              <g class="icon"><path class="facebookIcon" d="M23.44,40.06c0-5.4,0-10.51,0-15.68l4.26-.18c.2-1.68.39-3.37.6-5.12H23.46c0-1.24,0-2.42,0-3.59A1.43,1.43,0,0,1,25,14.29h3.28V9l-.17,0c-1.83,0-3.66-.05-5.48.07a7.49,7.49,0,0,0-2.66.7,4.84,4.84,0,0,0-2.78,4.48c-.07,1.44,0,2.88,0,4.32v.56H14.07v5.23h3c0,5.2,0,10.31,0,15.74Z" style="fill:#1b4a7e;fill-rule:evenodd"/></g>
+            </svg>
+
+            <svg id="instagram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+              <defs>
+                <style>
+                #instagram rect:hover { fill:#E10B14; }
+                #instagram:hover .instaIcon { fill:white !important; }
+                  .rectangle { fill:white;}
+                </style>
+              </defs>
+              <g class="background"><rect class="rectangle" x="0.01" width="40" height="40" rx="5"/></g>
+              <g class="icon">
+                <path class="instaIcon" d="M31.35,30.32a6.5,6.5,0,0,1-3.74,2.53,16.93,16.93,0,0,1-4.14.36c-2.28,0-4.57,0-6.85,0a17.85,17.85,0,0,1-4.12-.42A7,7,0,0,1,10.83,32a5.6,5.6,0,0,1-1.94-2,7.17,7.17,0,0,1-1-3.2c-.14-1.42-.13-2.85-.16-4.28,0-1.84,0-3.67,0-5.51A17.45,17.45,0,0,1,8,13.92a6.75,6.75,0,0,1,5.92-5.64c.86-.11,1.74-.1,2.61-.14,2.27-.08,4.54,0,6.81,0A21,21,0,0,1,27,8.34a6.72,6.72,0,0,1,4.75,3.37,7.3,7.3,0,0,1,.94,3.37q.26,5.67,0,11.34A7.15,7.15,0,0,1,31.35,30.32Zm-1.24-2.55a5.83,5.83,0,0,0,.35-1.85c.12-3.5.12-7,0-10.51A7,7,0,0,0,30,13.23,3.86,3.86,0,0,0,27.65,11a8.27,8.27,0,0,0-2.7-.45c-2.4-.1-4.81,0-7.21-.06-1.06,0-2.12,0-3.18.12a4.76,4.76,0,0,0-3.45,1.65,5.32,5.32,0,0,0-1.06,3.17c-.13,2.07-.07,4.15-.07,6.22a42.4,42.4,0,0,0,.14,5.17,4.34,4.34,0,0,0,3.44,3.94,9.33,9.33,0,0,0,2.18.22c3.41.09,6.83.15,10.25-.06A4.92,4.92,0,0,0,28.5,30,3.92,3.92,0,0,0,30.11,27.77Z" style="fill:#1b4a7e"/>
+                <path class="instaIcon" d="M26,23.64a6.36,6.36,0,0,1-5.26,3.48,5.81,5.81,0,0,1-2.61-.35,6.35,6.35,0,0,1-4.21-5.08c0-.17-.16-.33-.07-.52a6.58,6.58,0,0,1,.3-2.46,5.75,5.75,0,0,1,.7-1.43,6.41,6.41,0,0,1,10.58-.34,6.21,6.21,0,0,1,1.22,3.28A6.7,6.7,0,0,1,26,23.64Zm-1.65-2.09h0a4.16,4.16,0,0,0-6.53-4.2,3.87,3.87,0,0,0-1.69,2.72,4.07,4.07,0,0,0,.76,3.15,4,4,0,0,0,2.46,1.6,4.2,4.2,0,0,0,2.74-.37,3.9,3.9,0,0,0,2.19-2.64A.34.34,0,0,0,24.33,21.55Z" style="fill:#1b4a7e"/>
+                <path class="instaIcon" d="M28.41,14.08a1.49,1.49,0,1,1-1.49-1.5A1.48,1.48,0,0,1,28.41,14.08Z" style="fill:#1b4a7e"/>
+              </g>
+            </svg>
+
+            <svg id="twitter" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+              <defs>
+                <style>
+                #twitter:hover rect{ fill:#E10B14; }
+                #twitter:hover .twitterIcon { fill: white !important; }
+                  .rectangle { fill:white;}
+                </style>
+              </defs>
+
+              <g class="background"><rect class="rectangle" x="0.01" width="40" height="40" rx="5"/></g>
+              <g class="icon"><path class="twitterIcon" d="M14.77,26.1a5.43,5.43,0,0,1-3.64-1.53A5.31,5.31,0,0,1,9.71,22.3a5.31,5.31,0,0,0,2.41-.09A5.5,5.5,0,0,1,7.79,16.8a5.51,5.51,0,0,0,2.43.68s0,0,0-.05a5.46,5.46,0,0,1-1.64-7.15c0-.07.05-.06.1,0a15.47,15.47,0,0,0,5.49,4.23,15.28,15.28,0,0,0,4.73,1.31l.85.08c.07,0,.09,0,.08-.08A5.37,5.37,0,0,1,21,11.14,5.22,5.22,0,0,1,24.14,9.3a5.36,5.36,0,0,1,4.19,1,4.37,4.37,0,0,1,.69.6.14.14,0,0,0,.15.05,11,11,0,0,0,2.94-1.07l.43-.24a5.49,5.49,0,0,1-2.34,3,11.27,11.27,0,0,0,3.07-.83l-.07.1a10.73,10.73,0,0,1-2.58,2.67.15.15,0,0,0-.06.13,17.57,17.57,0,0,1,0,1.78,15.42,15.42,0,0,1-.63,3.29,16.55,16.55,0,0,1-1.58,3.61,15.88,15.88,0,0,1-2.85,3.53,14.64,14.64,0,0,1-3.54,2.4,15.36,15.36,0,0,1-3.87,1.25,16.69,16.69,0,0,1-3.53.25,15.55,15.55,0,0,1-6.1-1.49,17.09,17.09,0,0,1-1.62-.9l-.07,0A11,11,0,0,0,14.77,26.1Z" style="fill:#1b4a7e"/></g>
+            </svg>
+
+            <svg id="youtube" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+              <defs>
+                <style>
+                #youtube:hover rect{ fill:#E10B14; }
+                #youtube:hover .youtubeIcon { fill: white !important; }
+                  .rectangle { fill:white;}
+                </style>
+              </defs>
+
+              <g id="background"><rect class="rectangle" x="0.01" width="40" height="40" rx="5"/></g>
+              <g id="icon"><path class="youtubeIcon" d="M32.81,14A3.07,3.07,0,0,0,30,11.22c-1.94-.16-5.13-.33-10-.33-5,0-8.18.16-10.07.32A3.09,3.09,0,0,0,7.13,14c-.12,1.29-.22,3.17-.22,5.88s.1,4.79.22,6.1a3.08,3.08,0,0,0,2.8,2.79c2,.17,5.26.35,10.08.35,5.12,0,8.21-.14,10-.29a3.07,3.07,0,0,0,2.8-2.77c.14-1.37.26-3.39.26-6.18A57.59,57.59,0,0,0,32.81,14ZM16.24,24.49V15.12L25.3,20Z" style="fill:#1b4a7e"/></g>
+            </svg>
+
+          </div>
+        </section>
+      </footer>
     </main>
 
     <script src="js/main.js"></script>
