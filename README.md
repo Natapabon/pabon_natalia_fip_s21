@@ -1,8 +1,19 @@
-# Homework 5 - Responsive Layout
-Responsive Web Design using Flexbox (home page for FIP)
+# Grolsch
 
-# Project Description
-The homework for IDP31 - MMED 1056- Web Development 1, working with Flexbox.
+Grolsch is an authentic and refreshing beer brand, delivering a fresh,
+natural experience with a particular flavor.
+
+Grolsch 0% alcohol-free is a robust beer, with minty tones and a slight sweetness. The result is a beer that makes it the perfect thirst
+quencher at every moment of the day.
+
+Mint is present as the main ingredient, giving a feeling of coolness to your mouth, leaving a fresh and healthy breath. That is why 4 out
+of 5 brewers and dentists recommends it.
+
+Grolsch, a healthy and fresh tradition to share with friends.
+
+Be cool. Be fresh. Be blue.
+
+# Final Integrated Project (FIP) Description
 
 2nd term - Summer semester 2021 - Natalia Pabon Viteri
 
@@ -10,8 +21,7 @@ The homework for IDP31 - MMED 1056- Web Development 1, working with Flexbox.
 Copy repository from GitHub to preferred project location.
 
 # MIT License
-
-Copyright 2021 Natalia Pabon Viteri
+Copyright (c) 2021 Natalia Pabon
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
