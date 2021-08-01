@@ -1,0 +1,89 @@
+.hidden {display: none;}
+
+.containerPopUp {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: #EAFBFF;
+}
+
+body {
+  font-size: 100%;
+  font-family: "ROBOTO", Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  padding: 0.5em;
+  font-size: 2em;
+  font-weight: 900;
+}
+
+.popup {
+  width: 100%;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.imgPop {
+  width: 100%;
+  background-image: url(../images/lo-res_MOBILE/products/Mobile_prod_main.jpg);
+  background-repeat: no-repeat;
+	background-position: center;
+  background-size: cover;
+}
+
+#productCon {
+  background-color: #2472B8;
+  padding: 1em;
+  color: #fff;
+  text-align: center;
+}
+
+.textPopBlock h2 {font-size: 3em;}
+
+#productList {
+  padding: 1em;
+  color: #312783;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+
+}
+
+.prodView {
+  margin: 1em auto;
+  flex-direction: row;
+}
+
+.prodImg {
+  border-radius: 5px;
+  width: 80px;
+  margin-right: 1em;
+}
+
+.bottleImg {
+  background-image: url(../images/lo-res_MOBILE/products/Mobile_prod_bottle.jpg);
+  background-repeat: no-repeat;
+	background-position: center;
+  background-size: cover;
+}
+
+.canImg {
+  background-image: url(../images/lo-res_MOBILE/products/Mobile_prod_can.jpg);
+  background-repeat: no-repeat;
+	background-position: center;
+  background-size: cover;
+}
+
+.packImg {
+  background-image: url(../images/lo-res_MOBILE/products/Mobile_prod_pack.jpg);
+  background-repeat: no-repeat;
+	background-position: center;
+  background-size: cover;
+}
