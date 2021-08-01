@@ -14,6 +14,13 @@ Be cool. Be fresh. Be blue.
 
 2nd term - Summer semester 2021 - Natalia Pabon Viteri
 
+## Project Roadmap File
+[Project roadmap Google Doc Link](https://drive.google.com/file/d/1-RxrVeTxuBYx70rrXoqOtp0T14DLutM1/view?usp=sharing)
+
+## Project Outline File
+[Project Outline PDF Link](https://drive.google.com/file/d/1NXz8dUQfJguI8GzrkJ5Q0ALiwuxqu2Eg/view?usp=sharing)
+
+
 # Installation
 Copy repository from GitHub to preferred project location.
 
